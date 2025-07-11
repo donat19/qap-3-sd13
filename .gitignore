@@ -1,0 +1,30 @@
+# Игнорируемые файлы для Java проекта
+
+# Скомпилированные файлы
+*.class
+*.jar
+*.war
+*.ear
+
+# Логи
+*.log
+
+# Временные файлы
+*.tmp
+*.swp
+*~
+
+# IDE файлы
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS файлы
+.DS_Store
+Thumbs.db
+
+# Backup файлы
+*.bak
+*.backup
