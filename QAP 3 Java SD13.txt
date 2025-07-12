@@ -1,0 +1,232 @@
+QAP 3 – Java SD13
+
+Software Developer Course Assessment
+Quantitative Assessment Practice – 3
+
+Course Name: Advanced Programming (Java)
+Current Week: 2nd July 2025
+Submission Deadline: 12th July 2025
+
+Introduction:
+This assessment is designed to gauge your understanding of the review material covered in recent weeks. Its primary goal is to improve our teaching strategies by identifying areas that may require additional attention.
+
+Participation in this assessment is mandatory. You must complete at least 80% of the assigned QAPs for each course. Failure to do so will result in your course being marked as incomplete, regardless of your other grades.
+
+If you submit a solution, it will be marked as complete, and you will receive full participation marks—regardless of correctness. We encourage you to submit your best attempt, even if incomplete. Do not copy others' work; the purpose is to identify learning gaps honestly.
+
+📌 Final Submission Date: 12th July 2025 (End of Day)
+📌 Ensure all questions in the Instructions section are answered in your submission.
+
+Grading Criteria:
+QAPs are marked on a 1 to 5 scale:
+
+Grade	Description
+1	Incomplete: Severe lack of understanding; the solution is non-functional or unrelated.
+2	Partially Complete: Shows basic understanding; partial or buggy implementation.
+3	Mostly Complete: Demonstrates good grasp of core ideas; mostly functional with minor bugs.
+4	Complete (Pass): Functional, all requirements met; minor, non-critical bugs only.
+5	Complete with Distinction (Pass Outstanding): Exceeds expectations; handles edge cases, shows mastery.
+
+Instructions (Include in submission):
+Please answer the following:
+
+How many hours did it take you to complete this assessment? (Estimate per problem if possible)
+
+What online resources did you use? (e.g., Lectures, YouTube, Stack Overflow, etc.)
+
+Did you get help from any classmates? (If yes, provide names; they must be enrolled in your class)
+
+Did you ask for help from an instructor? (Mention the number of questions/help sessions)
+
+Rate the difficulty of each problem and your confidence in solving similar problems in the future.
+
+Submission Instructions:
+Create a public GitHub repository
+
+Upload all the Java files for each problem in separate folders
+
+Include a Word document with:
+
+Screenshots of outputs
+
+Your responses to the above instructions
+
+Submit the GitHub repository link
+
+Problem #1
+Inheritance: Person, Student, Teacher, CollegeStudent
+Create classes:
+
+Person (base class)
+
+Student (extends Person)
+
+Teacher (extends Person)
+
+CollegeStudent (extends Student)
+
+Tasks:
+
+Add get and set methods in Person: getName, getAge, getGender, setName, setAge, setGender.
+
+Add get and set methods in Student: getIdNum, getGPA, setIdNum, setGPA.
+
+Create Teacher class:
+
+Add subject (String) and salary (double)
+
+Constructor with name, age, gender, subject, salary
+
+Add setters and getters for new fields
+
+Override toString(), using super
+
+Create CollegeStudent class:
+
+Add major (String), year (int)
+
+Constructor with name, age, gender, idNum, GPA, year, major
+
+Add setters and getters for new fields
+
+Override toString(), using super
+
+Create a demo class to test all classes.
+
+Sample output:
+
+java
+Copy
+Edit
+Person bob = new Person("Coach Bob", 27, "M");
+System.out.println(bob);
+
+Student lynne = new Student("Lynne Brooke", 16, "F", "HS95129", 3.5);
+System.out.println(lynne);
+
+Teacher mrJava = new Teacher("Duke Java", 34, "M", "Computer Science", 50000);
+System.out.println(mrJava);
+
+CollegeStudent ima = new CollegeStudent("Ima Frosh", 18, "F", "UCB123", 4.0, 1, "English");
+System.out.println(ima);
+Deliverables:
+
+Person.java
+
+Student.java
+
+Teacher.java
+
+CollegeStudent.java
+
+Demo.java
+
+Screenshot of outputs
+
+Problem #2
+Class Diagram Implementation: Point and MovablePoint
+Write:
+
+Point class with x, y
+
+MovablePoint extends Point with xSpeed, ySpeed
+
+Hints:
+
+Use 0.0f, 1.1f for floats
+
+Use getters/setters to modify x, y in subclass
+
+Deliverables:
+
+Point.java
+
+MovablePoint.java
+
+Demo.java
+
+Screenshot of outputs
+
+Problem #3
+Abstract Classes: Shape Hierarchy
+Create abstract class Shape:
+
+Instance variable: name
+
+Abstract methods: getArea(), getPerimeter()
+
+Override toString()
+
+Subclasses:
+
+Ellipse: uses major a and minor b
+
+Circle: special case of Ellipse
+
+Triangle: sides a, b, c
+
+EquilateralTriangle: all sides equal
+
+Validation: Ensure triangle inequality holds in Triangle constructor.
+
+Test class:
+
+Create objects of all shape types
+
+Store in Shape[] array
+
+Loop through array, printing name, area, perimeter
+
+Deliverables:
+
+Shape.java
+
+Circle.java
+
+Ellipse.java
+
+Triangle.java
+
+EquilateralTriangle.java
+
+Demo.java
+
+Screenshot of outputs
+
+Problem #4
+Interfaces: Scalable
+Define interface Scalable:
+
+Method: void scale(double factor);
+
+Make Shape implement Scalable.
+
+Abstract class Shape doesn't implement scale, but subclasses do.
+
+Multiply dimensions by scale factor.
+
+Test class:
+
+Add static method: receives Scalable[], and a scaleFactor
+
+Calls scale() on each object
+
+Print objects before and after scaling
+
+Deliverables:
+
+Shape.java
+
+Circle.java
+
+Ellipse.java
+
+Triangle.java
+
+EquilateralTriangle.java
+
+Scalable.java
+
+Demo.java
+
+Screenshot of outputs
